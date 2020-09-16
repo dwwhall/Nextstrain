@@ -34,14 +34,15 @@ localrules: download
 # Create a standard ncov build for auspice, by default.
 rule all:
     input:
-        auspice_json = expand("auspice/ncov_{build_name}.json", build_name=BUILD_NAMES),
-        tip_frequency_json = expand("auspice/ncov_{build_name}_tip-frequencies.json", build_name=BUILD_NAMES)
+        auspice_json = "auspice/Indiana.json"
+
 
 rule clean:
     message: "Removing directories: {params}"
     params:
-        "results ",
-        "auspice"
+        group_by = "division"
+        sequences_per_group = 250
+        min_date = 2019
     shell:
         "rm -rfv {params}"
 

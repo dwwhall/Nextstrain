@@ -60,7 +60,9 @@ rule excluded_sequences:
         augur filter \
             --sequences {input.sequences} \
             --metadata {input.metadata} \
-	    --min-length 50000 \
+            --exclude config/exclude.txt \
+	    --group-by country year month \
+	    --sequences-per-group 500 \
             --include {input.include} \
             --output {output.sequences} 2>&1 | tee {log}
         """

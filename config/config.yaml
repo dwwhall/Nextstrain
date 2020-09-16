@@ -50,7 +50,7 @@ filter:
 # Alignments are partitioned into smaller groups to speed up the overall alignment process.
 # The number of sequences per group determines the run time of a single alignment job.
 partition_sequences:
-  sequences_per_group: 150
+  sequences_per_group: 500
 
 # Mask settings determine how the multiple sequence alignment is masked prior to phylogenetic inference.
 mask:
@@ -126,7 +126,7 @@ subsampling:
     # Contextual samples for region from the rest of the world
     global:
       group_by: "country year month"
-      seq_per_group: 10
+      seq_per_group: 100
       exclude: "--exclude-where 'region={region}'"
       priorities:
         type: "proximity"
@@ -136,7 +136,7 @@ subsampling:
   region_global:
     global:
       group_by: "division year month"
-      seq_per_group: 10
+      seq_per_group: 100
 
   # Custom subsampling logic for regions like Europe where grouping by country
   # is the smallest resolution required.

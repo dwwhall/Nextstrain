@@ -13,16 +13,16 @@ builds:
     geographic_scale: country
     region: North America
     country: USA
-  usa_washington:
+  usa_indiana:
     subsampling_scheme: division
     geographic_scale: division
     region: North America
     country: USA
-    division: Washington
-  usa_washington_king-county:
+    division: Indiana
+  usa_indiana_king-county:
     subsampling_scheme: location
     geographic_scale: location
     region: North America
     country: USA
-    division: Washington
-    location: King County
+    division: Indiana
+    location: 
