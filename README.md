@@ -40,3 +40,4 @@ If you're a lab and you'd like to get started sequencing, please see:
 * [Funding opportunities for sequencing efforts](https://twitter.com/firefoxx66/status/1242147905768751106)  
 * Or, if these don't meet your needs, [get in touch](mailto:hello@nextstrain.org)  
 # Indiana_ncov_Nextstrain
+# Indiana_ncov_Nextstrain
